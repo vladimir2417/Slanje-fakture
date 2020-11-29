@@ -1,0 +1,204 @@
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\Login1.exe.config
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\Login1.exe
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\Login1.pdb
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\MaterialDesignColors.dll
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\Bole\Desktop\Login1-master\Login1\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Sudo-per.csprojAssemblyReference.cache
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\SlanjeFakture.g.cs
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\UlogujSe.g.cs
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\App.g.cs
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Login1_MarkupCompile.cache
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Login1_MarkupCompile.lref
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\App.baml
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\SlanjeFakture.baml
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\UlogujSe.baml
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Login1.g.resources
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Login1.Properties.Resources.resources
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Sudo-per.csproj.GenerateResource.cache
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Sudo-per.csproj.CoreCompileInputs.cache
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Sudo-per.csproj.CopyComplete
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Login1.exe
+C:\Users\Bole\Desktop\Login1-master\Login1\obj\Debug\Login1.pdb
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\Login1.exe.config
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\Login1.exe
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\Login1.pdb
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\MaterialDesignColors.dll
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Sudo-per.csprojAssemblyReference.cache
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\SlanjeFakture.g.cs
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\UlogujSe.g.cs
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\App.g.cs
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Login1_MarkupCompile.cache
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Login1_MarkupCompile.lref
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\App.baml
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\SlanjeFakture.baml
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\UlogujSe.baml
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Login1.g.resources
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Login1.Properties.Resources.resources
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Sudo-per.csproj.GenerateResource.cache
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Sudo-per.csproj.CoreCompileInputs.cache
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Sudo-per.csproj.CopyComplete
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Login1.exe
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\obj\Debug\Login1.pdb
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\FontAwesome.WPF.dll
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\FontAwesome.WPF.xml
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\BouncyCastle.Crypto.dll
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\itextsharp.dll
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\itextsharp.xml
+D:\SUDOPER SLANJE FAKTURE\Login1-master\Login1\bin\Debug\MaterialDesignColors.pdb
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Login1.exe.config
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Login1.exe
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Login1.pdb
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\BouncyCastle.Crypto.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\FontAwesome.WPF.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\itextsharp.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\MaterialDesignColors.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\FontAwesome.WPF.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\itextsharp.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\MaterialDesignColors.pdb
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Sudo-per.csprojAssemblyReference.cache
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\SlanjeFakture.g.cs
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\UlogujSe.g.cs
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\App.g.cs
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Login1_MarkupCompile.cache
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Login1_MarkupCompile.lref
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\App.baml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\SlanjeFakture.baml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\UlogujSe.baml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Login1.g.resources
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Login1.Properties.Resources.resources
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Sudo-per.csproj.GenerateResource.cache
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Sudo-per.csproj.CoreCompileInputs.cache
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Sudo-per.csproj.CopyComplete
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Login1.exe
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Login1.pdb
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\grpc_csharp_ext.x86.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\grpc_csharp_ext.x64.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\libgrpc_csharp_ext.x86.so
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\libgrpc_csharp_ext.x64.so
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\libgrpc_csharp_ext.x86.dylib
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\libgrpc_csharp_ext.x64.dylib
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Microsoft.Win32.Primitives.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\netstandard.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.AppContext.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Collections.Concurrent.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Collections.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Collections.NonGeneric.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Collections.Specialized.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.ComponentModel.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.ComponentModel.Primitives.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.ComponentModel.TypeConverter.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Console.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Data.Common.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.Contracts.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.Debug.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.Process.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.Tools.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.TraceSource.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Diagnostics.Tracing.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Drawing.Primitives.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Dynamic.Runtime.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Globalization.Calendars.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Globalization.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Globalization.Extensions.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.Compression.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.Compression.ZipFile.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.FileSystem.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.FileSystem.Watcher.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.IsolatedStorage.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.MemoryMappedFiles.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.Pipes.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Linq.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Linq.Expressions.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Linq.Parallel.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Linq.Queryable.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.Http.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.NameResolution.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.NetworkInformation.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.Ping.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.Primitives.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.Requests.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.Security.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.Sockets.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.WebHeaderCollection.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.WebSockets.Client.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Net.WebSockets.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.ObjectModel.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Reflection.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Reflection.Extensions.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Reflection.Primitives.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Resources.Reader.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Resources.ResourceManager.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Resources.Writer.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.Extensions.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.Handles.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.InteropServices.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.Numerics.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.Serialization.Formatters.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.Serialization.Json.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.Serialization.Xml.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Security.Claims.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Security.Cryptography.Csp.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Security.Cryptography.Encoding.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Security.Cryptography.Primitives.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Security.Principal.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Security.SecureString.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Text.Encoding.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Text.Encoding.Extensions.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Text.RegularExpressions.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Threading.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Threading.Overlapped.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Threading.Tasks.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Threading.Tasks.Parallel.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Threading.Thread.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Threading.ThreadPool.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Threading.Timer.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.ValueTuple.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Xml.ReaderWriter.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Xml.XDocument.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Xml.XmlDocument.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Xml.XmlSerializer.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Xml.XPath.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Grpc.Core.Api.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Grpc.Core.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Buffers.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Memory.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Numerics.Vectors.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Grpc.Core.pdb
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Grpc.Core.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Grpc.Core.Api.pdb
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\Grpc.Core.Api.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Buffers.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Memory.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Numerics.Vectors.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Login1.exe.config
+D:\SUDOPER SLANJE FAKTURE\Sudo-per\Login1\obj\Debug\Login1_Content.g.cs
