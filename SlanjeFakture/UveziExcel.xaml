@@ -1,0 +1,93 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlanjeFakture.LinqToSql"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="SlanjeFakture.LinqToSql.UveziExcel"
+        mc:Ignorable="d"
+        Title="UveziExcel" Height="720" Width="1280" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Margin="10,172,320,32">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="white"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Background="#494949">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,22,10"><Run Text="ARTIKLI ZA UVOZ"/><LineBreak/><Run/></TextBlock>
+            </Grid>
+
+
+            <DataGrid x:Name="gridProizvoda" HorizontalAlignment="Left" Height="415" Margin="10,10,0,20" VerticalAlignment="Center" Width="922" Grid.Row="1" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Visible" IsReadOnly="True" >
+
+            </DataGrid>
+
+        </Grid>
+
+        <Grid Margin="10,10,320,541">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="white"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect> 
+            <Grid Background="#494949">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,22,10"><Run Text="ODABERI EXCEL TABELU"/><LineBreak/><Run/></TextBlock>
+            </Grid>
+            <TextBox x:Name="tbOdaberi" HorizontalAlignment="Left" Height="31" Margin="212,35,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" IsReadOnly="true" VerticalAlignment="Top" Width="474"/>
+            <Label Content="Odaberi tabelu" HorizontalAlignment="Left" Margin="56,42,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Button x:Name="btnOdaberi" Content="Odaberi" Background="#494949" BorderBrush="#494949" HorizontalAlignment="Left" Margin="760,38,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Click="btnOdaberi_Click"/>
+        </Grid>
+
+        <Grid Margin="975,10,10,32">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="white"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Background="#494949">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,22,10"><Run Text="AKCIJE"/><LineBreak/><Run/></TextBlock>
+            </Grid>
+            <Button Name="btnUvezi" Content="Uvezi" Background="#494949" BorderBrush="#494949" HorizontalAlignment="Left" Margin="34,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="222" Click="btnUvezi_Click"/>
+            <Button x:Name="btnSacuvaj" Content="Sačuvaj" Background="#494949" BorderBrush="#494949" HorizontalAlignment="Left" Margin="34,103,0,0" Grid.Row="1" VerticalAlignment="Top" Width="222"/>
+            <Button x:Name="btnNazad" Content="Nazad" Background="#494949" BorderBrush="#494949" HorizontalAlignment="Left" Margin="34,544,0,0" Grid.Row="1" VerticalAlignment="Top" Width="222" Click="btnNazad_Click"/>
+
+        </Grid>
+    </Grid>
+</Window>

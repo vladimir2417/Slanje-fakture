@@ -1,0 +1,39 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlanjeFakture"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="SlanjeFakture.UnesiArtikalNaFakturu"
+        mc:Ignorable="d"
+        Title="UNOS ARTIKLA U KALKULACIJU" Height="372" Width="485" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+
+        <DataTemplate x:Key="lbArtikliTemplate">
+            <WrapPanel>
+                <TextBlock Text="{Binding SifraArtikla}"/>
+                <TextBlock Text="   "/>
+                <TextBlock Text="{Binding NazivArtikla}"/>
+                <TextBlock Text="   Kol:  "/>
+                <TextBlock Text="{Binding Kolicina}"/>
+            </WrapPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+
+        <TextBox x:Name="tbPretraga"  materialDesign:HintAssist.Hint="Pretraga:" HorizontalAlignment="Left" Height="34" Margin="10,51,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="133" Background="#FFE6E6E6" TextChanged="tbPretraga_TextChanged" />
+        <ListBox x:Name="lbArtikli" HorizontalAlignment="Left" Height="124" BorderBrush="Black" VerticalAlignment="Top" Width="289" Margin="168,10,0,0" UseLayoutRounding="False" Background="#FFE6E6E6" ItemTemplate="{DynamicResource lbArtikliTemplate}" MouseDoubleClick="lbArtikli_MouseDoubleClick" SelectionChanged="lbArtikli_SelectionChanged" >
+            <ListBox.Effect>
+                <DropShadowEffect Opacity="0.11"/>
+            </ListBox.Effect>
+        </ListBox>
+        <TextBox x:Name="tbNaziv" materialDesign:HintAssist.Hint="Naziv:" HorizontalAlignment="Left" Height="29" Margin="168,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289"/>
+        <TextBox x:Name="tbSifra" materialDesign:HintAssist.Hint="Sifra:" HorizontalAlignment="Left" Height="29" Margin="10,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="tbkolicina" materialDesign:HintAssist.Hint="Količina:" HorizontalAlignment="Left" Height="29" Margin="10,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="tbRabat" materialDesign:HintAssist.Hint="Rabat:" HorizontalAlignment="Left" Height="29" Margin="325,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="tbProdajnaCena" materialDesign:HintAssist.Hint="Prodajna cena:" HorizontalAlignment="Left" Height="29" Margin="168,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"  />
+        <Button Background="#494949" x:Name="btnUnesi" Content="UNESI" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.5,0.5" Click="btnUnesi_Click" Height="51"/>
+        <Button Background="#494949" x:Name="btnOtkazi" Content="OTKAZI" HorizontalAlignment="Left" Margin="325,280,0,10"  Width="132" Click="btnOtkazi_Click" Height="Auto"/>
+
+    </Grid>
+</Window>

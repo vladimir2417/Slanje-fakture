@@ -1,0 +1,103 @@
+﻿<Window x:Class="SlanjeFakture.LinqToSql.Izvestaji"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:SlanjeFakture.LinqToSql"
+        mc:Ignorable="d"
+        Title="FAKTURE IZVEŠTAJ" Height="720" Width="1280" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid Margin="10,10,246,68">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="white"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Background="#494949">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="780*"/>
+                    <ColumnDefinition Width="473*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,531,10"><Run Text="IZVEŠTAJ"/><LineBreak/><Run/></TextBlock>
+            </Grid>
+            <Label x:Name="lbPretraga" Content="Nema proizvoda za unete parametre" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="446,76,0,0" Width="286" Visibility="Hidden"/>
+
+            <DataGrid AutoGenerateColumns="False" x:Name="gridProizvoda" HorizontalAlignment="Left" Height="493" Margin="10,69,0,11" VerticalAlignment="Center" Width="998" Grid.Row="1" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Visible" IsReadOnly="True" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Račun broj" Binding="{Binding Path=RacunBroj}" Width="170"/>
+                    <DataGridTextColumn Header="Kupac" Binding="{Binding Path=NazivKupca}" Width="180"/>
+                    <DataGridTextColumn Header="Datum prometa" Binding="{Binding Path=DatumPrometaDobara}" Width="200"/>
+                    <DataGridTextColumn Header="Ukupno" Binding="{Binding Path=Ukupno}" Width="200"/>
+
+                    <DataGridTemplateColumn Header="Artikli">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btnDetalji" Background="#494949" BorderBrush="#494949" Click="btnDetalji_Click">
+                                    <Grid Width="15" Height="15" >
+                                        <materialDesign:PackIcon Kind="Details"  VerticalAlignment="Center" Margin="0,0,0,0" Width="17"/>
+                                    </Grid>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="Storniraj">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btnStorniraj" Background="#494949" BorderBrush="#494949" Click="btnStorniraj_Click"  >
+                                    <Grid Width="15" Height="15" >
+                                        <materialDesign:PackIcon Kind="Delete"  VerticalAlignment="Center" Margin="0,0,0,0" Width="17"/>
+                                    </Grid>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <DatePicker Name="dpOd" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="OD:" Margin="10,11,0,0" Grid.Row="1" VerticalAlignment="Top" Width="143"/>
+            <DatePicker Name="dpDo" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="DO:" Margin="194,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="144"/>
+            <Button Name="btnIzvrsi" Content="IZVRŠI" HorizontalAlignment="Left" Background="#494949" Margin="376,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.5,0.5" Click="btnIzvrsi_Click">
+            </Button>
+
+        </Grid>
+        <Button Background="#494949" BorderBrush="#494949" Name="btnStampaj" Content="ŠTAMPAJ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="167" Margin="10,641,0,0" Click="btnStampaj_Click" />
+        <Button  Background="#494949" BorderBrush="#494949" x:Name="btnNazad" Content="NAZAD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="206" Margin="1049,641,0,0" Click="btnNazad_Click" />
+        <Grid Margin="1049,10,19,68">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="white"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Background="#494949">
+                <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,104,10" Text="PODACI"/>
+            </Grid>
+            <Label Content="Izdato faktura:" HorizontalAlignment="Center" Margin="10,18,10,0" Grid.Row="1" VerticalAlignment="Top" Width="186" FontSize="16" FontWeight="SemiBold" HorizontalContentAlignment="Center"/>
+            <TextBox Name="tbIzdatoFaktura" HorizontalAlignment="Left" Height="32" Margin="50,52,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Center" CaretBrush="#FF5B5B5B" IsReadOnly="true" FontSize="16"/>
+            <Label Content="Prodato proizvoda:" HorizontalAlignment="Center" Margin="10,110,10,0" Grid.Row="1" VerticalAlignment="Top" Width="186" FontSize="16" FontWeight="SemiBold" HorizontalContentAlignment="Center"/>
+            <TextBox  Name="tbProdatoProizvoda" HorizontalAlignment="Left" Height="32" Margin="50,144,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108" FontSize="16" IsReadOnly="true" HorizontalContentAlignment="Center"/>
+            <Label Content="Ukupna cena:" HorizontalAlignment="Center" Margin="10,212,10,0" Grid.Row="1" VerticalAlignment="Top" Width="186" FontSize="16" FontWeight="SemiBold" HorizontalContentAlignment="Center"/>
+            <TextBox  Name="tbUkunaCena" HorizontalAlignment="Left" Height="32" Margin="50,246,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Center" IsReadOnly="true" FontSize="16"/>
+            <Label Content="Iznos PDV-a:" HorizontalAlignment="Center" Margin="10,312,10,0" Grid.Row="1" VerticalAlignment="Top" Width="186" FontSize="16" FontWeight="SemiBold" HorizontalContentAlignment="Center"/>
+            <TextBox  Name="tbIznosPDVa" HorizontalAlignment="Left" Height="32" Margin="50,346,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="108" FontSize="16" IsReadOnly="true" HorizontalContentAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>

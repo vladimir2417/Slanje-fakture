@@ -1,4 +1,7 @@
 ﻿using System.Windows;
+using System.Data; 
+using System.Linq;
+using SlanjeFakture.LinqToSql;
 
 namespace SlanjeFakture
 {
@@ -9,37 +12,38 @@ namespace SlanjeFakture
             InitializeComponent();
         }
 
+        AppBazaDataContext appBazaDataContext = new AppBazaDataContext();
         private void btnUlogujSe_Click(object sender, RoutedEventArgs e)
         {
-            if (tbKorisnickoIme.Text.Length > 0 && pbLozinka.Password.Length > 0)
-            {
-                string korisnickoIme = "sandra";
-                string lozinka = "stefanmatija";
+            //if (tbKorisnickoIme.Text.Length > 0 && pbLozinka.Password.Length > 0)
+            //{
+                Prodavac prodavac = (from p in appBazaDataContext.Prodavacs
+                                     where p.KorisnickoIme == tbKorisnickoIme.Text && p.Lozinka == pbLozinka.Password
+                                     select p).FirstOrDefault();
 
-                if (tbKorisnickoIme.Text != korisnickoIme)
+                if (prodavac == null)
                 {
-                    MessageBox.Show("Pogrešno korisničko ime. Molimo unesite ponovo.", "Upozorenje", MessageBoxButton.OK, MessageBoxImage.Warning);
-                }
-                else if (pbLozinka.Password != lozinka)
-                {
-                    MessageBox.Show("Pogrešna lozinka. Molimo unesite ponovo.", "Upozorenje", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Pogrešno korisničko ime ili lozinka. Molimo unesite ponovo.", "Upozorenje", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
                 else
                 {
-                    var slanjeFakture = new MainClass();
-                    slanjeFakture.Show();
+                Application.Current.Properties["KorisnickoIme"] = prodavac.KorisnickoIme;
+                var Odabir = new Odabir();
+                    Odabir.Show();
                     this.Close();
                 }
-            }
-            else
-            {
-                MessageBox.Show("Unesite parametre.", "Upozorenje", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Unesite parametre.", "Upozorenje", MessageBoxButton.OK, MessageBoxImage.Warning);
+            //}
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
+
+      
     }
 }

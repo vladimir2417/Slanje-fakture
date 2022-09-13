@@ -1,0 +1,48 @@
+﻿<Window x:Class="SlanjeFakture.DodajArtikalUNivelaciju"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:SlanjeFakture"
+        mc:Ignorable="d"
+         Title="DODAJ ARTIKAL U NIVELACIJU" Height="720" Width="933.467" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+
+        <DataTemplate x:Key="lbArtikliTemplate">
+            <WrapPanel>
+                <TextBlock Text="{Binding SifraArtikla}"/>
+                <TextBlock Text="   "/>
+                <TextBlock Text="{Binding NazivArtikla}"/>
+                <TextBlock Text="   Kol:  "/>
+                <TextBlock Text="{Binding Kolicina}"/>
+            </WrapPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid Margin="0,0,2,0">
+
+        <TextBox x:Name="tbPretraga"  materialDesign:HintAssist.Hint="Pretraga:" HorizontalAlignment="Left" Height="34" Margin="10,49,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="193" Background="#FFE6E6E6" TextChanged="tbPretraga_TextChanged" />
+        <ListBox x:Name="lbArtikli" HorizontalAlignment="Left" Height="170.5" BorderBrush="Black" VerticalAlignment="Top" Width="683.05" Margin="229.95,10,0,0" UseLayoutRounding="False" Background="#FFE6E6E6" ItemTemplate="{DynamicResource lbArtikliTemplate}" MouseDoubleClick="lbArtikli_MouseDoubleClick" >
+            <ListBox.Effect>
+                <DropShadowEffect Opacity="0.11"/>
+            </ListBox.Effect>
+        </ListBox>
+
+        <Button Background="#494949" Name="btnUnesi" Content="UNESI" HorizontalAlignment="Left" Margin="10,647,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.5,0.5" Click="btnUnesi_Click"></Button>
+        <Button Background="#494949" x:Name="btnOtkazi" Content="OTKAZI" HorizontalAlignment="Left" Margin="781,647,0,0" VerticalAlignment="Top" Width="132" Click="btnOtkazi_Click"/>
+        <DataGrid x:Name="gridProizvodaMagacin" HorizontalAlignment="Left" Height="334" Margin="10,199,0,156" VerticalAlignment="Center" Width="903" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Visible" IsReadOnly="True" >
+            <DataGrid.ContextMenu>
+                <ContextMenu/>
+            </DataGrid.ContextMenu>
+
+
+        </DataGrid>
+        <Button Background="#494949" x:Name="btnObrisiRed" Content="OBRISI RED" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.5,0.5" Click="btnObrisiRed_Click"/>
+        <RadioButton Name="rbPovecajCenu" Content="Povećaj prodajnu cenu za:" HorizontalAlignment="Left" Margin="13,549,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="rbUmanjiCenu"  Content="Umanji prodajnu cenu za:" HorizontalAlignment="Left" Margin="13,572,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="rbDodajZaradu"  Content="Dodaj zaradu na nabavnu cenu:" HorizontalAlignment="Left" Margin="13,595,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name="tbUnesiCenu" Height="29" Margin="295,565,0,0" TextWrapping="Wrap"  materialDesign:HintAssist.Hint="Unesi cenu:" VerticalAlignment="Top" Width="161"/>
+
+
+    </Grid>
+</Window>

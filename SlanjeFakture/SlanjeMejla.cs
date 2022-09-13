@@ -8,19 +8,20 @@ namespace SlanjeFakture
         public void saljiMejl(string mejlFirme, string racunBroj, string putanjaFakture)
         {
             MailMessage mejl = new MailMessage();
-            SmtpClient SmtpServer = new SmtpClient("mailcluster.loopia.se");
+            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
-            mejl.From = new MailAddress("prodaja@sudo-per.co.rs");
+            mejl.From = new MailAddress("interboss.sm@gmail.com");
             mejl.To.Add(mejlFirme);
-            mejl.Subject = "SUDO PER  - faktura";
+            mejl.Subject = "Inter Boss SM  - faktura";
             mejl.Body = "Poštovani,\n " + "U prilogu Vam šaljemo fakturu, račun broj: " + racunBroj + ".";
 
             Attachment faktura = new Attachment(putanjaFakture);
             mejl.Attachments.Add(faktura);
 
-            SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("prodaja@sudo-per.co.rs", "stefanmatija");
             SmtpServer.EnableSsl = true;
+            SmtpServer.Port = 587;
+            SmtpServer.Credentials = new System.Net.NetworkCredential("interboss.sm@gmail.com", "stefanmatija");
+            
 
             SmtpServer.Send(mejl);
             MessageBox.Show("Mejl poslat.", "Uspešno!", MessageBoxButton.OK, MessageBoxImage.Information);

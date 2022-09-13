@@ -1,0 +1,63 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlanjeFakture"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="SlanjeFakture.Kalkulacije_izveštaj_početna"
+        mc:Ignorable="d"
+        Title="KALKULACIJE IZVEŠTAJ" Height="720" Width="750" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,4,0">
+
+        <Grid Margin="10,10,10,68">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="white"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Background="#494949">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,633,10"><Run Text="IZVEŠTAJ"/><LineBreak/><Run/></TextBlock>
+            </Grid>
+            <Label x:Name="lbPretraga" Content="Nema proizvoda za unete parametre" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="446,76,0,0" Width="286" Visibility="Hidden"/>
+
+            <DataGrid AutoGenerateColumns="False" x:Name="gridProizvoda" HorizontalAlignment="Left" Height="516" Margin="10,47,0,10" VerticalAlignment="Center" Width="700" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Visible" IsReadOnly="True" Grid.Row="1" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Broj kalkulacije" Binding="{Binding BrojKalkulacije}" Width="200"/>
+                    <DataGridTextColumn Header="Broj dokumenta" Binding="{Binding BrojDokumenta}" Width="200"/>
+                    <DataGridTextColumn Header="Datum" Binding="{Binding DatumKalkulacije}" Width="200"/>
+
+                    <DataGridTemplateColumn Header="Detalji">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btnDetalji" Background="#494949" BorderBrush="#494949" Click="btnDetalji_Click" >
+                                    <Grid Width="15" Height="15" >
+                                        <materialDesign:PackIcon Kind="Details"  VerticalAlignment="Center" Margin="0,0,0,0" Width="17"/>
+                                    </Grid>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <DatePicker x:Name="dpOd" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="OD:" Margin="10,11,0,0" Grid.Row="1" VerticalAlignment="Top" Width="143"/>
+            <DatePicker x:Name="dpDo" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="DO:" Margin="194,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="144"/>
+            <Button x:Name="btnIzvrsi" Content="IZVRŠI" HorizontalAlignment="Left" Background="#494949" Margin="376,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.5,0.5" Click="btnIzvrsi_Click"/>
+
+        </Grid>
+        <Button  Background="#494949" BorderBrush="#494949" x:Name="btnNazad" Content="NAZAD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="172" Margin="558,640,0,0" Click="btnNazad_Click" />
+
+    </Grid>
+</Window>

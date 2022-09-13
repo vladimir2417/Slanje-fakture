@@ -1,0 +1,81 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlanjeFakture"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="SlanjeFakture.Otpad"
+        mc:Ignorable="d"
+        Title="OTPAD" Height="678" Width="1239.5" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
+    <Window.Resources>
+
+        <DataTemplate x:Key="lbArtikliTemplate">
+            <WrapPanel>
+                <TextBlock Text="{Binding NazivArtikla}"/>
+                <TextBlock Text="   Kol:  "/>
+                <TextBlock Text="{Binding Kolicina}"/>
+            </WrapPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+
+
+        <Grid Margin="10,31,10,10">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="white"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Background="#494949">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="780*"/>
+                    <ColumnDefinition Width="473*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,577,10"><Run Text="ŠIFARNIK ARTIKALA"/><LineBreak/><Run/></TextBlock>
+            </Grid>
+            <TextBox x:Name="tbPretraga"  materialDesign:HintAssist.Hint="Pretraga" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229" Margin="24,14,0,0"  Grid.Row="1" TextChanged="tbPretraga_TextChanged"/>
+            <Label x:Name="lbPretraga" Content="Nema dobavljača za unete parametre" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="446,76,0,0" Width="286" Visibility="Hidden"/>
+
+            <DataGrid AutoGenerateColumns="False" x:Name="gridProizvoda" HorizontalAlignment="Left" Height="390" Margin="10,170,0,8" VerticalAlignment="Center" Width="956" Grid.Row="1" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Visible" IsReadOnly="True" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Sifra" Binding="{Binding SifraArtikla}" Width="180"/>
+                    <DataGridTextColumn Header="Naziv" Binding="{Binding NazivArtikla}" Width="200"/>
+                    <DataGridTextColumn Header="Prodajna cena" Binding="{Binding ProdajnaCena}" Width="180"/>
+                    <DataGridTextColumn Header="Kolicina u magacinu" Binding="{Binding Kolicina}" Width="180"/>
+                    <DataGridTextColumn Header="Kolicina u otpadu" Binding="{Binding Otpad}" Width="180"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <TextBox HorizontalAlignment="Left" Name="tbNaziv" Height="23" Margin="749,24,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="174"/>
+            <TextBox HorizontalAlignment="Left" Name="tbSifra"  Height="23" Margin="749,52,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="174"/>
+            <TextBox HorizontalAlignment="Left" Name="tbKolicina" Height="23" Margin="749,119,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="174"/>
+            <Label Content="NAZIV:" HorizontalAlignment="Left" Margin="656,24,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="ŠIFRA:" HorizontalAlignment="Left" Margin="656,53,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="KOLIČINA&#xD;&#xA;U MAGACINU:" HorizontalAlignment="Left" Margin="656,107,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" x:Name="tbKolicinaOtpad" Height="23" Margin="1025,54,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+            <Label Content="KOLIČINA ZA OTPAD:" HorizontalAlignment="Left" Margin="1025,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="186"/>
+            <Label Content="VRATI IZ OTPADA:" HorizontalAlignment="Left" Margin="1025,231,0,0" Grid.Row="1" VerticalAlignment="Top" Width="186"/>
+            <Label Content="KOLIČINA ZA OTPAD:" HorizontalAlignment="Left" Margin="1025,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="186"/>
+            <TextBox HorizontalAlignment="Left" x:Name="tbKolicinaVratiOtpad" Height="23" Margin="1025,266,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174"/>
+            <Button Background="#494949" Content="VRATI IZ OTPADA" Name="btnVratiIzOtpada" HorizontalAlignment="Left" Margin="1025,307,0,0" VerticalAlignment="Top" Width="172"  Grid.Row="1" Click="btnVratiIzOtpada_Click" />
+
+        </Grid>
+        <Button Background="#494949" Content="NAZAD" HorizontalAlignment="Left" Margin="1035,594,0,0" VerticalAlignment="Top" Width="172" Click="Button_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2" />
+        <ListBox x:Name="lbArtikli" HorizontalAlignment="Left" Height="124" BorderBrush="Black" VerticalAlignment="Top" Width="337" Margin="292,92.4,0,0" UseLayoutRounding="False" Background="#FFE6E6E6" ItemTemplate="{DynamicResource lbArtikliTemplate}" MouseDoubleClick="lbArtikli_MouseDoubleClick" SelectionChanged="lbArtikli_SelectionChanged" >
+            <ListBox.Effect>
+                <DropShadowEffect Opacity="0.11"/>
+            </ListBox.Effect>
+        </ListBox>
+        <Button Background="#494949" Content="DODAJ U OTPAD" Name="btnDodajUOtpad" HorizontalAlignment="Left" Margin="1035,164,0,0" VerticalAlignment="Top" Width="172" Click="btnDodajUOtpad_Click" Grid.ColumnSpan="2" />
+        <Button Background="#494949" Content="DODAJ U OTPAD" x:Name="btnDodajUOtpad_Copy" HorizontalAlignment="Left" Margin="1035,164,0,0" VerticalAlignment="Top" Width="172" Click="btnDodajUOtpad_Click" Grid.ColumnSpan="2" />
+
+    </Grid>
+</Window>

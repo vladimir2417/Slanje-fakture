@@ -1,0 +1,74 @@
+﻿<Window x:Class="SlanjeFakture.Dobavljaci"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:SlanjeFakture"
+        mc:Ignorable="d"
+        Title="DOBAVLJAČI" Height="720" Width="1280" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid Margin="10">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="white"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
+            </Grid.Effect>
+            <Grid Background="#494949">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,1092,10"><Run Text="LISTA DOBAVLJAČA"/><LineBreak/><Run/></TextBlock>
+            </Grid>
+            <TextBox x:Name="tbPretraga"  materialDesign:HintAssist.Hint="Pretraga" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="394" Margin="24,14,0,0" Grid.Row="1" KeyUp="tbPretraga_KeyUp" TextChanged="tbPretraga_TextChanged"/>
+            <Label x:Name="lbPretraga" Content="Nema dobavljača za unete parametre" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="461,20,0,0" Width="286" Height="28" Grid.Row="1" Visibility="Hidden" />
+
+            <DataGrid AutoGenerateColumns="False" x:Name="gridProizvoda" HorizontalAlignment="Left" Height="468" Margin="10,98,0,65" VerticalAlignment="Center" Width="1232" Grid.Row="1" VerticalContentAlignment="Center" VerticalScrollBarVisibility="Visible" IsReadOnly="True" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Naziv dobavljača" Binding="{Binding Path=NazivDobavljaca}" Width="250"/>
+                    <DataGridTextColumn Header="PIB" Binding="{Binding Path=PIB}" Width="120"/>
+                    <DataGridTextColumn Header="Matični broj" Binding="{Binding Path=MaticniBroj}" Width="120"/>
+                    <DataGridTextColumn Header="Adresa" Binding="{Binding Path=Adresa}" Width="150"/>
+                    <DataGridTextColumn Header="Mejl" Binding="{Binding Path=Mejl}" Width="150"/>
+                    <DataGridTextColumn Header="Telefon" Binding="{Binding Path=Telefon}" Width="120"/>
+                    <DataGridTextColumn Header="Poštanski broj" Binding="{Binding Path=PostanskiBroj}" Width="100"/>
+
+                    <DataGridTemplateColumn Header="Izmeni">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btnIzmeniRed" Background="#494949" BorderBrush="#494949" Click="btnIzmeniRed_Click" >
+                                    <Grid Width="15" Height="15" >
+                                        <materialDesign:PackIcon Kind="Edit"  VerticalAlignment="Center" Margin="0,0,0,0" Width="17"/>
+                                    </Grid>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Obriši">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="btnObrisiRed" Background="#494949" BorderBrush="#494949" Click="btnObrisiRed_Click" >
+                                    <Grid Width="15" Height="15" >
+                                        <materialDesign:PackIcon Kind="Delete"  VerticalAlignment="Center" Margin="0,0,0,0" Width="17"/>
+                                    </Grid>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <Button Background="#494949" BorderBrush="#494949" x:Name="btnUnesiNovogDobavljaca" Content="UNESI NOVOG DOBAVLJAČA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Margin="10,589,0,0" Click="btnUnesiNovogDobavljaca_Click" Grid.Row="1"/>
+            <Button  Background="#494949" BorderBrush="#494949" x:Name="btnNazad" Content="NAZAD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="167" Margin="1067,589,0,0" Click="btnNazad_Click" Grid.Row="1" />
+
+        </Grid>
+    </Grid>
+</Window>

@@ -7,10 +7,14 @@
         xmlns:local="clr-namespace:SlanjeFakture"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Slanje fakture" Icon="Assets/Ikonica.png" IsTabStop="False" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Loaded="Window_Loaded" SizeToContent="WidthAndHeight">
+        Title="KREIRANJE FAKTURE" Icon="Assets/Ikonica.png" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Loaded="Window_Loaded" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+
+    </Window.Resources>
+
     <Grid Margin="10,10,10,10">
 
-        <Grid Margin="10,10,731,500">
+        <Grid Margin="12,0,646,493">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="1"/>
@@ -24,19 +28,19 @@
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
             </Grid.Effect>
-            <Grid Background="#FF8522BD">
+            <Grid Background="#494949">
                 <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,270,10"><Run Text="PODACI O FIRMI"/><LineBreak/><Run/></TextBlock>
             </Grid>
 
-            <TextBox x:Name="tbNazivFirme" materialDesign:HintAssist.Hint="Naziv firme:" HorizontalAlignment="Left" Height="34" Margin="22,5,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="255" Grid.Row="1"/>
-            <TextBox x:Name="tbAdresaFirme" materialDesign:HintAssist.Hint="Adresa firme:" HorizontalAlignment="Left" Height="34" Margin="22,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="255" Grid.Row="1"/>
-            <TextBox x:Name="tbMejlAdresa" materialDesign:HintAssist.Hint="Mejl firme:" HorizontalAlignment="Left" Height="34" Margin="22,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="255" Grid.Row="1"/>
-            <TextBox x:Name="tbpostanskiBroj" materialDesign:HintAssist.Hint="Poštanski broj:" HorizontalAlignment="Left" Height="34" Margin="302,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" Grid.Row="1"/>
-            <TextBox x:Name="tbPIB" materialDesign:HintAssist.Hint="PIB:" HorizontalAlignment="Left" Height="34" Margin="302,5,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" Grid.Row="1" />
-            <TextBox x:Name="tbMB" materialDesign:HintAssist.Hint="M.B:" HorizontalAlignment="Left" Height="34" Margin="302,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" Grid.Row="1" />
+            <TextBox x:Name="tbNazivFirme" materialDesign:HintAssist.Hint="Naziv firme:" HorizontalAlignment="Left" Height="34" Margin="19,5,0,0" TextWrapping="Wrap"  Text="" VerticalAlignment="Top" Width="255" Grid.Row="1"/>
+            <TextBox x:Name="tbAdresaFirme" materialDesign:HintAssist.Hint="Adresa firme:" HorizontalAlignment="Left" Height="34" Margin="19,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="255" Grid.Row="1"/>
+            <TextBox x:Name="tbMejlAdresa" materialDesign:HintAssist.Hint="Mejl firme:" HorizontalAlignment="Left" Height="34" Margin="19,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="255" Grid.Row="1"/>
+            <TextBox x:Name="tbpostanskiBroj" materialDesign:HintAssist.Hint="Poštanski broj:" HorizontalAlignment="Left" Height="34" Margin="309,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" Grid.Row="1"/>
+            <TextBox x:Name="tbPIB" materialDesign:HintAssist.Hint="PIB:" HorizontalAlignment="Left" Height="34" Margin="309,5,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" Grid.Row="1" />
+            <TextBox x:Name="tbMB" materialDesign:HintAssist.Hint="M.B:" HorizontalAlignment="Left" Height="34" Margin="309,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" Grid.Row="1" />
         </Grid>
 
-        <Grid Margin="546,10,338,500">
+        <Grid Margin="538,0,278,500">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="1"/>
@@ -50,17 +54,17 @@
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
             </Grid.Effect>
-            <Grid Background="#FF8522BD">
+            <Grid Background="#494949">
                 <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,180,10"><Run Text="PODACI O FAKTURI"/><LineBreak/><Run/></TextBlock>
             </Grid>
 
             <TextBox x:Name="tbRacunBr" materialDesign:HintAssist.Hint="Racun broj:" HorizontalAlignment="Left" Height="34" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="173" Grid.Row="1"/>
-            <TextBox x:Name="tbMestoIzdavanja" materialDesign:HintAssist.Hint="Mesto izdavanja računa:" HorizontalAlignment="Left" Height="34" Margin="199,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="154" Grid.Row="1"/>
-            <DatePicker x:Name="dpDatum" materialDesign:HintAssist.Hint="Datum:" HorizontalAlignment="Left" Margin="199,49,0,0" Grid.Row="1" VerticalAlignment="Top" Width="154" FirstDayOfWeek="Monday" Focusable="False" Height="34"/>
+            <TextBox x:Name="tbMestoIzdavanja" materialDesign:HintAssist.Hint="Mesto izdavanja računa:" HorizontalAlignment="Left" Height="34" Margin="199,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="126" Grid.Row="1"/>
+            <DatePicker x:Name="dpDatum" materialDesign:HintAssist.Hint="Datum:" HorizontalAlignment="Left" Margin="199,49,0,0" Grid.Row="1" VerticalAlignment="Top" Width="126" FirstDayOfWeek="Monday" Focusable="False" Height="34"/>
             <DatePicker x:Name="dpRokPlacanja" materialDesign:HintAssist.Hint="Rok plaćanja:" HorizontalAlignment="Left" Margin="10,49,0,0" Grid.Row="1" VerticalAlignment="Top" Width="173" Height="34"/>
         </Grid>
 
-        <Grid Margin="10,191,338,14">
+        <Grid Margin="10,191,278,14">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="White" Offset="1"/>
@@ -74,43 +78,26 @@
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
             </Grid.Effect>
-            <Grid Background="#FF8522BD">
+            <Grid Background="#494949">
                 <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,270,10"><Run Text="ARTIKLI"/><LineBreak/><Run/></TextBlock>
             </Grid>
+            <DataGrid x:Name="gridProizvoda" Height="332" Margin="10,47,0,0" VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Left" Width="851"/>
+            <TextBox x:Name="tbUkupnoSve" HorizontalAlignment="Left" Height="32" Margin="706,384,0,0" TextWrapping="Wrap" IsReadOnly="True"  VerticalAlignment="Top" Width="120" Grid.Row="1" RenderTransformOrigin="0.325,0.344"/>
+            <Label Content="UKUPNO:" HorizontalAlignment="Left" Margin="642,391,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+            <TextBox x:Name="tbIznosRabata" HorizontalAlignment="Left" Height="32" Margin="275,384,0,0" TextWrapping="Wrap" IsReadOnly="True"  VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+            <Label Content="IZNOS RABATA:" HorizontalAlignment="Left" Margin="180,390,0,0" VerticalAlignment="Top" Grid.Row="1"/>
 
-            <TextBox x:Name="tbSifra" materialDesign:HintAssist.Hint="Šifra:" HorizontalAlignment="Left" Height="34" Margin="26,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" Grid.Row="1"/>
-            <TextBox x:Name="tbNazivDobra" materialDesign:HintAssist.Hint="Naziv dobra:" HorizontalAlignment="Left" Height="34" Margin="134,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
-            <TextBox x:Name="tbKolicina" materialDesign:HintAssist.Hint="Količina:" HorizontalAlignment="Left" Height="34" Margin="268,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Grid.Row="1"/>
-            <TextBox x:Name="tbCenaPoJM" materialDesign:HintAssist.Hint="Cena po JM:" HorizontalAlignment="Left" Height="34" Margin="370,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" Grid.Row="1"/>
-            <TextBox x:Name="tbRabat" materialDesign:HintAssist.Hint="Rabat %:" HorizontalAlignment="Left" Height="34" Margin="469,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" Grid.Row="1"/>
-            <Button x:Name="btnDodaj" Margin="567,19,224,381" Background="#FF8522BD" BorderBrush="#FF8522BD" Click="btnDodaj_Click" Grid.Row="1" Height="Auto"  >
-                <Grid Width="69" Height="17" >
-                    <materialDesign:PackIcon Kind="Plus"  VerticalAlignment="Center" Margin="-10,0,0,1" Width="17"/>
-                    <TextBlock HorizontalAlignment="Right" Text="DODAJ" FontFamily="Champagne &amp; Limousines" Width="52" Margin="0,0,0,1"/>
-                </Grid>
-            </Button>
-            <Button x:Name="btnObrisiRed" Margin="703,19,64,381" Background="#FF8522BD" BorderBrush="#FF8522BD" Grid.Row="1" Height="Auto" Click="btnObrisiRed_Click"  >
-                <Grid Width="69" Height="17" >
-                    <materialDesign:PackIcon Kind="Minus"  VerticalAlignment="Center" Margin="-20,0,0,1" Width="17"/>
-                    <TextBlock HorizontalAlignment="Right" Text="OBRIŠI RED" FontFamily="Champagne &amp; Limousines" Width="85" Margin="0,0,-22,1"/>
-                </Grid>
-            </Button>
-            <DataGrid x:Name="gridProizvoda" HorizontalAlignment="Left" Height="309" Margin="0,70,0,0" VerticalAlignment="Top" Width="906" Grid.Row="1"/>
-            <TextBox x:Name="tbUkupnoSve" HorizontalAlignment="Left" Height="32" Margin="741,389,0,0" TextWrapping="Wrap" IsReadOnly="True"  VerticalAlignment="Top" Width="120" Grid.Row="1" RenderTransformOrigin="0.325,0.344"/>
-            <Label Content="UKUPNO:" HorizontalAlignment="Left" Margin="677,388,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-            <TextBox x:Name="tbIznosRabata" HorizontalAlignment="Left" Height="32" Margin="523,389,0,0" TextWrapping="Wrap" IsReadOnly="True"  VerticalAlignment="Top" Width="120" Grid.Row="1"/>
-            <Label Content="IZNOS RABATA:" HorizontalAlignment="Left" Margin="428,388,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-            <Button x:Name="btnObrisiSve" Margin="26,390,741,10" Background="#FF8522BD" BorderBrush="#FF8522BD" Grid.Row="1" Click="btnObrisiSve_Click"   >
-                <Grid Width="69" Height="17" >
-                    <materialDesign:PackIcon Kind="Delete"  VerticalAlignment="Center" Margin="-20,0,0,1" Width="17"/>
-                    <TextBlock HorizontalAlignment="Right" Text="OBRIŠI SVE" FontFamily="Champagne &amp; Limousines" Width="85" Margin="0,0,-22,1"/>
-                </Grid>
-            </Button>
+            <Button Content="UNESI ARTIKAL" x:Name="btnUnesiArtikal" Background="#494949" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="141" Click="btnUnesiArtikal_Click"/>
+            <TextBox x:Name="tbUkupanPDV" HorizontalAlignment="Left" Height="32" Margin="505,384,0,0" TextWrapping="Wrap" IsReadOnly="True"  VerticalAlignment="Top" Width="120" Grid.Row="1" RenderTransformOrigin="0.325,0.344"/>
+            <Label Content="PDV UKUPAN:" HorizontalAlignment="Left" Margin="418,391,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+            <TextBox Visibility="Hidden" x:Name="tbUkupnoBezRabata" HorizontalAlignment="Left" Height="32" Margin="943,232,-192,0" TextWrapping="Wrap" IsReadOnly="True"  VerticalAlignment="Top" Width="120" Grid.Row="1" RenderTransformOrigin="0.325,0.344"/>
+            <TextBox Visibility="Hidden" x:Name="tbPoreskaOsnovica" HorizontalAlignment="Left" Height="32" Margin="943,298,-192,0" TextWrapping="Wrap" IsReadOnly="True"  VerticalAlignment="Top" Width="120" Grid.Row="1" RenderTransformOrigin="0.325,0.344"/>
+            <Button Content="OBRIŠI SVE" Name="btnObrisiSve" Background="#494949" HorizontalAlignment="Left" Margin="10,384,0,0" Grid.Row="1" VerticalAlignment="Top" Width="141" Click="btnObrisiSve_Click"/>
 
         </Grid>
-        <Grid Margin="940,10,10,500">
+        <Grid Margin="905,0,10,500" Height="169" VerticalAlignment="Bottom">
             <Grid.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush >
                     <GradientStop Color="White" Offset="1"/>
                     <GradientStop Color="white"/>
                 </LinearGradientBrush>
@@ -122,17 +109,17 @@
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="10" Color="#FFDEDEDE" RenderingBias="Quality" ShadowDepth="1"/>
             </Grid.Effect>
-            <Grid Background="#FF8522BD">
+            <Grid Background="#494949">
                 <TextBlock  FontFamily="WS Simple Gallifreyan" Foreground="White" FontSize="16" Margin="14,10,104,10" Text="ČESTI KLIJENTI"/>
             </Grid>
 
-            <ComboBox x:Name="cbCestiKlijenti" materialDesign:HintAssist.Hint="Izaberite firmu:" HorizontalAlignment="Left" Margin="23,40,0,0" Grid.Row="1" VerticalAlignment="Top" Width="258" SelectionChanged="cbCestiKlijenti_SelectionChanged" Height="39">
+            <ComboBox x:Name="cbCestiKlijenti" materialDesign:HintAssist.Hint="Izaberite firmu:" HorizontalAlignment="Left" Margin="13,40,0,0" Grid.Row="1" VerticalAlignment="Top" Width="208" SelectionChanged="cbCestiKlijenti_SelectionChanged" Height="39">
             </ComboBox>
         </Grid>
 
-        <Button x:Name="btnPosalji" Content="POŠALJI" Background="#FF8522BD" HorizontalAlignment="Right" Margin="0,260,10,0" VerticalAlignment="Top" Width="304" Click="btnPosalji_Click" Height="42"/>
-        <Button x:Name="btnResetujPolja" Content="RESETUJ POLJA" Background="#FF8522BD" HorizontalAlignment="Right" Margin="0,0,10,444" VerticalAlignment="Bottom" Width="304" Height="42" Click="btnResetujPolja_Click"/>
-        <Button x:Name="btnExit" Content="IZLAZ" Background="#FF8522BD" HorizontalAlignment="Right" Margin="0,0,10,14" VerticalAlignment="Bottom" Width="304" Height="42" Click="btnExit_Click"/>
-        <Image HorizontalAlignment="Left" Height="42" Margin="998,427,0,0" VerticalAlignment="Top" Width="210" Source="/Assets/logo.png"/>
+        <Button x:Name="btnPosalji" Content="POŠALJI MEJLOM" Background="#494949" HorizontalAlignment="Right" Margin="0,260,10,0" VerticalAlignment="Top" Width="244" Click="btnPosalji_Click" Height="42"/>
+        <Button x:Name="btnResetujPolja" Content="RESETUJ POLJA" Background="#494949" HorizontalAlignment="Right" Margin="0,0,10,444" VerticalAlignment="Bottom" Width="244" Height="42" Click="btnResetujPolja_Click"/>
+        <Button x:Name="btnExit" Content="NAZAD" Background="#494949" HorizontalAlignment="Right" Margin="0,0,10,14" VerticalAlignment="Bottom" Width="244" Height="42" Click="btnExit_Click"/>
+        <Button x:Name="btnStampaj" Content="ŠTAMPAJ" Background="#494949" HorizontalAlignment="Right" Margin="0,332,10,0" VerticalAlignment="Top" Width="244" Height="42" Click="btnStampaj_Click_1"/>
     </Grid>
 </Window>
